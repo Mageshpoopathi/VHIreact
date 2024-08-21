@@ -27,7 +27,7 @@ const AddRecord = () => {
       const handleSubmit = async(event: { preventDefault: () => void; }) => {
         event.preventDefault();
         const result = await dispatch(insertCourseInfo(formData))
-        result['messageCode'] == "MSG200" ? 'Successfully Added!!': "Last insertion Failed"r3f2sqdzsz
+       // result['messageCode'] == "MSG200" ? 'Successfully Added!!': "Last insertion Failed"r3f2sqdzsz
         console.log("result", result);
         console.log('Form Submitted:', formData);
         setFormData(initialState);
